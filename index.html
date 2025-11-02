@@ -1,60 +1,102 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adalin Sohtorik | Kişisel Gelişim Mentoru</title>
-  <style>
-    body { font-family: "Poppins", sans-serif; background-color: #f5f0eb; color: #3b1c1c; margin: 0; padding: 0; text-align: center; }
-    header { background-color: #7c3c3c; color: #fff; padding: 40px 20px; }
-    img { width: 150px; height: 150px; border-radius: 50%; margin-top: 20px; }
-    section { padding: 40px 20px; max-width: 800px; margin: auto; }
-    a { color: #7c3c3c; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    .contact-form input, .contact-form textarea { width: 90%; max-width: 500px; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-    .contact-form button { background-color: #7c3c3c; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
-    footer { background-color: #7c3c3c; color: white; padding: 20px; margin-top: 40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adalin Sohtorik | Kişisel Gelişim Mentoru</title>
+    
+    <style>
+        /* Genel stil */
+        body {
+            background-color: #3E0201; /* Arka plan rengi */
+            color: #F2EDE7;           /* Yazı rengi */
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Fotoğraf */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #F2EDE7;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Butonlar / linkler */
+        .btn {
+            display: inline-block;
+            background-color: #F2EDE7;
+            color: #3E0201;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #e6dfd9;
+        }
+
+        /* Bölümler */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Adalin Şöhtörik</h1>
-  <p>Kişisel Gelişim Mentoru | Danışman | Yazar</p>
-  <img src="https://via.placeholder.com/150" alt="Profil Fotoğrafım">
+    <img src="https://via.placeholder.com/150" alt="Adalin Sohtorik" class="profile-pic">
+    <h1>Adalin Sohtorik</h1>
+    <h2>Kişisel Gelişim Mentoru</h2>
+    <p>Merhaba! Ben Adalin, kişisel gelişim üzerine danışmanlık veriyorum ve blog yazıları paylaşıyorum. Eğitimlerim, deneyimlerim ve rehberlik hizmetlerimle hayatınızı daha iyi yönlendirebilirsiniz.</p>
 </header>
 
-<section id="about">
-  <h2>Ben Kimim?</h2>
-  <p>Merhaba! Ben Adalin, kişisel gelişim alanında bireylere yol gösteren bir mentorum. Amacım, insanların potansiyellerini keşfetmelerine ve kendi iç dengelerini bulmalarına yardımcı olmak.</p>
+<section>
+    <h2>Hizmetlerim ve Blog</h2>
+    <a href="#blog" class="btn">Blog Yazıları</a>
+    <a href="#contact" class="btn">İletişim</a>
+    <a href="https://www.advisemy.com/adalin" target="_blank" class="btn">Danışmanlık</a>
 </section>
 
 <section id="blog">
-  <h2>Blog Yazılarım</h2>
-  <p>💡 <a href="#">Kendini Tanımanın Gücü</a></p>
-  <p>🌿 <a href="#">Zihinsel Dayanıklılık Nasıl Geliştirilir?</a></p>
-  <p>💬 <a href="#">Olumsuz Düşüncelerle Başa Çıkmak</a></p>
-</section>
-
-<section id="services">
-  <h2>Danışmanlık</h2>
-  <p>Online danışmanlık hizmetlerimi görmek için: <a href="https://www.advicemy.com/danisman/adalin-sohtorik" target="_blank">Advicemy Profilime Git →</a></p>
+    <h2>Son Blog Yazıları</h2>
+    <p>Blog yazılarınız burada listelenecek. Örnek yazı: <a href="#" style="color:#F2EDE7;">Kişisel Gelişim İçin 5 Günlük Plan</a></p>
 </section>
 
 <section id="contact">
-  <h2>İletişim</h2>
-  <p>Danışmanlık almak veya sorularınız için bana ulaşabilirsiniz 👇</p>
-  <form class="contact-form" action="mailto:adlnshtrk@yahoo.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Adınız" required><br>
-    <input type="email" name="email" placeholder="E-posta adresiniz" required><br>
-    <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea><br>
-    <button type="submit">Gönder</button>
-  </form>
+    <h2>İletişim</h2>
+    <p>Danışmanlık veya sorularınız için bana mail atabilirsiniz:</p>
+    <a href="mailto:seninmail@gmail.com" class="btn">Mail Gönder</a>
 </section>
-
-<footer>
-  <p>© 2025 Adalin Sohtorik | Tüm Hakları Saklıdır</p>
-</footer>
 
 </body>
 </html>
